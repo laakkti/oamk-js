@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Phone book</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <meta name="author" content="Timo Laakkonen">
+</head>
+
+<body onload="startData()">
+  <main>
+    <h2>Phone book</h2>
+
+    <section>
+      <hr />
+      <h3>Insert / Update</h3>
+      <table class='insert'>
+        <tr>
+          <td>Last name:</td>
+          <td><input id="lastName"></td>
+        </tr>
+        <tr>
+          <td>First name:</td>
+          <td><input id="firstName"></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input id="phoneNumber"></td>
+        </tr>
+        <tr>
+          <td>Birth year:</td>
+          <td><input type="number" id="birthYear"></td>
+        </tr>
+      </table>
+
+      <ul class="buttons">
+        <li><button onclick="save()">Save</button></li>
+        <li><button onclick="cancel()">Cancel</button></li>
+        <!--<li><button onclick="startData()">Start data</button></li>-->
+      </ul>
+
+    </section>
+
+    <section>
+      <hr />
+      <h3>All friends</h3>
+      <ul class="friends" id='allFriends'></ul>
+      <p id='stats' class='stats'></p>
+
+    </section>
+
+    <section>
+      <hr />
+      <h3>One friend</h3>
+      <table class='details'>
+        <tr>
+          <td>Friend:</td>
+          <td><input id="_friend"></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input id="_phone"></td>
+        </tr>
+        <tr>
+          <td>Birth year:</td>
+          <td><input id="_birthYear"></td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input id="_age"></td>
+        </tr>
+
+      </table>
+      <ul class="buttons">
+        <li><button onclick="remove()" id='remove'>Remove</button></li>
+        <li><button onclick=" edit()" id='edit'>Edit</button></li>
+      </ul>
+
+    </section>
+  </main>
+  <script src="js/code.js"></script>
+</body>
+
+</html>
