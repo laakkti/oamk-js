@@ -1,0 +1,101 @@
+body {
+  background-color: #1e2937;
+}
+
+main {
+  background-color: #ffffff;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+section {
+  display: inline-block;
+  width: 20em;
+  vertical-align: top;
+  margin-right: 1em;
+}
+
+section > h3 {
+  color: #347b98;
+}
+
+h2 {
+  color: #1a3e4c;
+}
+
+p.stats {
+  color: #1a3e4c;
+  font-size: 14px;
+}
+
+td {
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+
+table.insert td > input {
+  background-color: #e1ecf9;
+  border: 0px;
+  text-indent: 5px;
+  border-radius: 6px;
+}
+
+table.details {
+  background-color: #79bea8;
+  padding-left: 5px;
+  border: 0px;
+  border-radius: 6px;
+}
+
+table.details td > input {
+  pointer-events: none;
+  background-color: #f8f8f8;
+  border: 0px;
+}
+
+.buttons button {
+  width: 30%;
+}
+
+ul.buttons {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul.friends {
+  padding-left: 0;
+  list-style-type: none;
+  max-height: 100px;
+  overflow: auto;
+  cursor: pointer;
+}
+
+ul.friends > li {
+  line-height: 1.5em;
+  padding-left: 0px;
+  border-bottom: 1px solid #79bea8;
+  text-indent: 5px;
+  border-radius: 4px;
+}
+
+ul.friends > li:hover {
+  background-color: #e4f1f6;
+}
+
+ul.friends > li:active {
+  background-color: #A9CAEF
+}
+
+section#A9CAEF  border-top: 1px solid #a9caef;
+  border-bottom: 0px;
+}
